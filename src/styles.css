@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #f8eded;
+  --secondary-color: #373a40;
+  --tertiary-color: #ff8225;
+  --result-text: #b43f3f;
+  --heading-text: "Oswald", sans-serif;
+  --font-family: "Open Sans", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: var(--font-family);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--tertiary-color);
+}
+
+.palindrome-div {
+  width: 100%;
+  max-width: 450px;
+  min-height: 100px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 4px var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.palindrome-btn {
+  width: 90px;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.palindrome-input {
+  height: 30px;
+  width: 250px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid var(--tertiary-color);
+}
+
+.palindrome-input:focus {
+  border: 3px solid var(--tertiary-color);
+}
+
+.results-div {
+  overflow-y: auto;
+  word-wrap: break-word;
+  min-height: 50px;
+  color: var(--result-text);
+}
+
+.hidden {
+  display: none;
+}
+
+.palindrome-definition-div {
+  width: 100%;
+  max-width: 450px;
+  font-size: 1.3rem;
+  min-height: 140px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.palindrome-definition {
+  vertical-align: middle;
+  text-align: center;
+}
