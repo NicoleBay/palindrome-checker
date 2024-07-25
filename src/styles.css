@@ -35,9 +35,10 @@ body {
 .title {
   text-align: center;
   padding: 10px 0;
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
   color: var(--tertiary-color);
+  font-family: var(--heading-text);
 }
 
 .palindrome-div {
@@ -86,10 +87,15 @@ label {
   border: 3px solid var(--tertiary-color);
 }
 
+.palindrome-input::placeholder {
+  font-size: 14px;
+}
+
 .results-div {
   overflow-y: auto;
   word-wrap: break-word;
   min-height: 50px;
+  font-size: 1.3rem;
   color: var(--result-text);
 }
 
